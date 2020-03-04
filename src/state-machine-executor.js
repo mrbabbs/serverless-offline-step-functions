@@ -239,7 +239,7 @@ class StateMachineExecutor {
             input = {};
         } else {
             input = input ? input : {};
-            jsonPath.query(input, stateInfo.InputPath, callback: (data) => {
+            jsonPath.query(input, stateInfo.InputPath, (data) => {
                 input = Object.assign({}, data);
             });
         }
